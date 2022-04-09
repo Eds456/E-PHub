@@ -1,0 +1,788 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local BuildBoat = Instance.new("ScreenGui")
+local Load = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local azul = Instance.new("UIGradient")
+local menu = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local azul_2 = Instance.new("UIGradient")
+local Main = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Config = Instance.new("TextButton")
+local preto = Instance.new("UIGradient")
+local Configs = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local Tema = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local Luz = Instance.new("TextButton")
+local Noite = Instance.new("TextButton")
+local close = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local MainF = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local Frame_2 = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local TextLabel_7 = Instance.new("TextLabel")
+local Auto = Instance.new("TextButton")
+local Fun = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel_8 = Instance.new("TextLabel")
+local Fun_2 = Instance.new("TextButton")
+local preto_2 = Instance.new("UIGradient")
+local TextLabel_9 = Instance.new("TextLabel")
+
+--Properties:
+
+BuildBoat.Name = "BuildBoat"
+BuildBoat.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+BuildBoat.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Load.Name = "Load"
+Load.Parent = BuildBoat
+Load.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Load.Position = UDim2.new(0.417483807, 0, 0.357642353, 0)
+Load.Size = UDim2.new(0.164640799, 0, 0.284715295, 0)
+
+UICorner.Parent = Load
+
+azul.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(55, 206, 223)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(91, 136, 229))}
+azul.Name = "azul"
+azul.Parent = Load
+
+menu.Name = "menu"
+menu.Parent = Load
+menu.BackgroundColor3 = Color3.fromRGB(198, 198, 198)
+menu.Position = UDim2.new(-0.000998639152, 0, 0, 0)
+menu.Size = UDim2.new(0.270494133, 0, 0.993031383, 0)
+
+UICorner_2.Parent = menu
+
+azul_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(55, 206, 223)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(91, 136, 229))}
+azul_2.Name = "azul"
+azul_2.Parent = menu
+
+Main.Name = "Main"
+Main.Parent = menu
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0, 0, 0.204537705, 0)
+Main.Size = UDim2.new(1, 0, 0.076452598, 0)
+Main.Font = Enum.Font.Fantasy
+Main.Text = "Main"
+Main.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main.TextScaled = true
+Main.TextSize = 14.000
+Main.TextWrapped = true
+
+TextLabel.Parent = menu
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.280815274, 0, 0.0190219712, 0)
+TextLabel.Size = UDim2.new(0.438009173, 0, 0.0988313034, 0)
+TextLabel.Font = Enum.Font.Fantasy
+TextLabel.Text = "E^P"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Config.Name = "Config"
+Config.Parent = menu
+Config.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Config.BackgroundTransparency = 1.000
+Config.BorderSizePixel = 0
+Config.Position = UDim2.new(0.00370075041, 0, 0.876119912, 0)
+Config.Size = UDim2.new(0.992805779, 0, 0.076452598, 0)
+Config.Font = Enum.Font.Fantasy
+Config.Text = "Configs"
+Config.TextColor3 = Color3.fromRGB(255, 255, 255)
+Config.TextScaled = true
+Config.TextSize = 14.000
+Config.TextWrapped = true
+
+preto.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(31, 31, 31)), ColorSequenceKeypoint.new(0.01, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.80, Color3.fromRGB(73, 73, 73)), ColorSequenceKeypoint.new(0.84, Color3.fromRGB(65, 65, 66)), ColorSequenceKeypoint.new(0.86, Color3.fromRGB(69, 70, 70)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
+preto.Name = "preto"
+preto.Parent = menu
+
+Configs.Name = "Configs"
+Configs.Parent = Load
+Configs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Configs.BackgroundTransparency = 0.880
+Configs.Position = UDim2.new(0.352058113, 0, 0.0202069972, 0)
+Configs.Size = UDim2.new(0.618828356, 0, 0.965275884, 0)
+Configs.Visible = false
+
+UICorner_3.Parent = Configs
+
+TextLabel_2.Parent = Configs
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.261087656, 0, 0.00916365162, 0)
+TextLabel_2.Size = UDim2.new(0.474319756, 0, 0.124650866, 0)
+TextLabel_2.Font = Enum.Font.Fantasy
+TextLabel_2.Text = "Configuration"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = Configs
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.261087656, 0, 0.00916365162, 0)
+TextLabel_3.Size = UDim2.new(0.474319756, 0, 0.124650866, 0)
+TextLabel_3.Font = Enum.Font.Fantasy
+TextLabel_3.Text = "Configuration"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+Tema.Name = "Tema"
+Tema.Parent = Configs
+Tema.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tema.BackgroundTransparency = 1.000
+Tema.BorderSizePixel = 0
+Tema.Position = UDim2.new(0, 0, 0.191758126, 0)
+Tema.Size = UDim2.new(1, 0, 0.0798722059, 0)
+Tema.Font = Enum.Font.Fantasy
+Tema.Text = "Theme"
+Tema.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tema.TextScaled = true
+Tema.TextSize = 14.000
+Tema.TextWrapped = true
+
+Frame.Parent = Tema
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 0.950
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 1, 0)
+Frame.Size = UDim2.new(1, 0, 3.07999992, 0)
+
+UICorner_4.Parent = Frame
+
+Luz.Name = "Luz"
+Luz.Parent = Frame
+Luz.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Luz.BackgroundTransparency = 1.000
+Luz.BorderSizePixel = 0
+Luz.Position = UDim2.new(-0.00314465398, 0, 0.126823053, 0)
+Luz.Size = UDim2.new(1, 0, 0.324675322, 0)
+Luz.Font = Enum.Font.Fantasy
+Luz.Text = "Default"
+Luz.TextColor3 = Color3.fromRGB(255, 255, 255)
+Luz.TextScaled = true
+Luz.TextSize = 14.000
+Luz.TextWrapped = true
+
+Noite.Name = "Noite"
+Noite.Parent = Frame
+Noite.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Noite.BackgroundTransparency = 1.000
+Noite.BorderSizePixel = 0
+Noite.Position = UDim2.new(0, 0, 0.594355524, 0)
+Noite.Size = UDim2.new(1, 0, 0.324675322, 0)
+Noite.Font = Enum.Font.Fantasy
+Noite.Text = "Black"
+Noite.TextColor3 = Color3.fromRGB(0, 0, 0)
+Noite.TextScaled = true
+Noite.TextSize = 14.000
+Noite.TextWrapped = true
+
+close.Name = "close"
+close.Parent = Load
+close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+close.BackgroundTransparency = 1.000
+close.Position = UDim2.new(0.933191597, 0, 0, 0)
+close.Size = UDim2.new(0.0690012798, 0, 0.0942644924, 0)
+close.Font = Enum.Font.SourceSansSemibold
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(255, 255, 255)
+close.TextScaled = true
+close.TextSize = 14.000
+close.TextWrapped = true
+
+UICorner_5.Parent = close
+
+TextLabel_4.Parent = close
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_4.Position = UDim2.new(0.0263379216, 0, 0, 0)
+TextLabel_4.Size = UDim2.new(0.944160223, 0, 0.97028631, 0)
+TextLabel_4.Font = Enum.Font.SourceSansSemibold
+TextLabel_4.Text = "X"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+MainF.Name = "MainF"
+MainF.Parent = Load
+MainF.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainF.BackgroundTransparency = 0.850
+MainF.Position = UDim2.new(0.352058113, 0, 0.0202069972, 0)
+MainF.Size = UDim2.new(0.618828356, 0, 0.965275884, 0)
+
+UICorner_6.Parent = MainF
+
+TextLabel_5.Parent = MainF
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.280815274, 0, 0.0190219712, 0)
+TextLabel_5.Size = UDim2.new(0.438009173, 0, 0.0988313034, 0)
+TextLabel_5.Font = Enum.Font.Fantasy
+TextLabel_5.Text = "Main"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+TextLabel_6.Parent = MainF
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.280815274, 0, 0.0190219712, 0)
+TextLabel_6.Size = UDim2.new(0.438009173, 0, 0.0988313034, 0)
+TextLabel_6.Font = Enum.Font.Fantasy
+TextLabel_6.Text = "Main"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+Frame_2.Parent = MainF
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BackgroundTransparency = 0.950
+Frame_2.Position = UDim2.new(0.0291482061, 0, 0.186488926, 0)
+Frame_2.Size = UDim2.new(0.933419347, 0, 0.206980169, 0)
+
+UICorner_7.Parent = Frame_2
+
+TextLabel_7.Parent = Frame_2
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(-0.0029218269, 0, 0.00709020952, 0)
+TextLabel_7.Size = UDim2.new(0.395320237, 0, 0.38737762, 0)
+TextLabel_7.Font = Enum.Font.Fantasy
+TextLabel_7.Text = "AutoFarm"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+TextLabel_7.TextXAlignment = Enum.TextXAlignment.Left
+
+Auto.Name = "Auto"
+Auto.Parent = Frame_2
+Auto.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Auto.BackgroundTransparency = 1.000
+Auto.BorderSizePixel = 0
+Auto.Position = UDim2.new(-0.00322006689, 0, 0.385135293, 0)
+Auto.Size = UDim2.new(0.992805839, 0, 0.429755598, 0)
+Auto.Font = Enum.Font.Fantasy
+Auto.Text = "Enable"
+Auto.TextColor3 = Color3.fromRGB(255, 255, 255)
+Auto.TextScaled = true
+Auto.TextSize = 14.000
+Auto.TextWrapped = true
+
+Fun.Name = "Fun"
+Fun.Parent = MainF
+Fun.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fun.BackgroundTransparency = 0.950
+Fun.Position = UDim2.new(0.0291482061, 0, 0.390252113, 0)
+Fun.Size = UDim2.new(0.933419347, 0, 0.206980169, 0)
+
+UICorner_8.Parent = Fun
+
+TextLabel_8.Parent = Fun
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(-0.0029218269, 0, 0.00709020952, 0)
+TextLabel_8.Size = UDim2.new(0.395320237, 0, 0.38737762, 0)
+TextLabel_8.Font = Enum.Font.Fantasy
+TextLabel_8.Text = "Fun"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
+TextLabel_8.TextXAlignment = Enum.TextXAlignment.Left
+
+Fun_2.Name = "Fun"
+Fun_2.Parent = Fun
+Fun_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fun_2.BackgroundTransparency = 1.000
+Fun_2.BorderSizePixel = 0
+Fun_2.Position = UDim2.new(-0.00322006689, 0, 0.385135293, 0)
+Fun_2.Size = UDim2.new(0.992805839, 0, 0.429755598, 0)
+Fun_2.Font = Enum.Font.Fantasy
+Fun_2.Text = "Enable"
+Fun_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fun_2.TextScaled = true
+Fun_2.TextSize = 14.000
+Fun_2.TextWrapped = true
+
+preto_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(31, 31, 31)), ColorSequenceKeypoint.new(0.01, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.80, Color3.fromRGB(73, 73, 73)), ColorSequenceKeypoint.new(0.84, Color3.fromRGB(65, 65, 66)), ColorSequenceKeypoint.new(0.86, Color3.fromRGB(69, 70, 70)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
+preto_2.Name = "preto"
+preto_2.Parent = Load
+
+TextLabel_9.Parent = BuildBoat
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Position = UDim2.new(0.398054779, 0, 0.316683322, 0)
+TextLabel_9.Size = UDim2.new(0.203530252, 0, 0.366633356, 0)
+TextLabel_9.Visible = false
+TextLabel_9.Font = Enum.Font.Fantasy
+TextLabel_9.Text = "E^P"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+-- Scripts:
+
+local function UFCPDG_fake_script() -- BuildBoat.LocalScript 
+	local script = Instance.new('LocalScript', BuildBoat)
+
+	script.Parent.ResetOnSpawn = true
+end
+coroutine.wrap(UFCPDG_fake_script)()
+local function HZXMBG_fake_script() -- Load.mover 
+	local script = Instance.new('LocalScript', Load)
+
+	script.Parent.Parent.Load.Selectable = true
+	script.Parent.Parent.Load.Active = true
+	script.Parent.Parent.Load.Draggable = true 
+end
+coroutine.wrap(HZXMBG_fake_script)()
+local function DAFLKGN_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BackgroundTransparency = 0.8
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.BackgroundTransparency = 1
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.MainF.Visible = true
+		script.Parent.Parent.Parent.Configs.Visible = false
+	end)
+end
+coroutine.wrap(DAFLKGN_fake_script)()
+local function ZZQFIJU_fake_script() -- menu.anim 
+	local script = Instance.new('LocalScript', menu)
+
+	local button = script.Parent
+	local gradient = button.azul
+	local ts = game:GetService("TweenService") 
+	local ti = TweenInfo.new(5, Enum.EasingStyle.Circular, Enum.EasingDirection.Out)
+	local offset1 = {Offset = Vector2.new(1, 0)}
+	local create = ts:Create(gradient, ti, offset1)
+	local startingPos = Vector2.new(-1, 0) 
+	local addWait = 0.5
+	gradient.Offset = startingPos
+	
+	local function animate()
+	
+		create:Play(1)
+		create.Completed:Wait(2) 
+		gradient.Offset = startingPos
+		create:Play(1)
+		create.Completed:Wait(2)
+		gradient.Offset = startingPos
+		wait(addWait) 
+		animate() 
+	
+	end
+	
+	animate()
+end
+coroutine.wrap(ZZQFIJU_fake_script)()
+local function NLTR_fake_script() -- Config.LocalScript 
+	local script = Instance.new('LocalScript', Config)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BackgroundTransparency = 0.8
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.BackgroundTransparency = 1
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Configs.Visible = true
+		script.Parent.Parent.Parent.MainF.Visible = false
+		
+	end)
+end
+coroutine.wrap(NLTR_fake_script)()
+local function HJSU_fake_script() -- menu.animpreto 
+	local script = Instance.new('LocalScript', menu)
+
+	
+	local button = script.Parent
+	local gradient = button.preto
+	local ts = game:GetService("TweenService") 
+	local ti = TweenInfo.new(5, Enum.EasingStyle.Circular, Enum.EasingDirection.Out)
+	local offset1 = {Offset = Vector2.new(1, 0)}
+	local create = ts:Create(gradient, ti, offset1)
+	local startingPos = Vector2.new(-1, 0) 
+	local addWait = 0.5
+	gradient.Offset = startingPos
+	
+	local function animate()
+	
+		create:Play(1)
+		create.Completed:Wait(2) 
+		gradient.Offset = startingPos
+		create:Play(1)
+		create.Completed:Wait(2)
+		gradient.Offset = startingPos
+		wait(addWait) 
+		animate() 
+	
+	end
+	
+	animate()
+end
+coroutine.wrap(HJSU_fake_script)()
+local function PHCHJ_fake_script() -- Tema.LocalScript 
+	local script = Instance.new('LocalScript', Tema)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BackgroundTransparency = 0.8
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.BackgroundTransparency = 1
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Frame.Visible = true
+		script.Parent.Frame:TweenSize(UDim2.new(0, 318,0, 77),"Out","Quad",0.7,true,nil)
+		wait(0.5)
+		script.Parent.Frame.Noite.Visible = true
+		script.Parent.Frame.Luz.Visible = true
+	end)
+	
+end
+coroutine.wrap(PHCHJ_fake_script)()
+local function OAQFHM_fake_script() -- Luz.LocalScript 
+	local script = Instance.new('LocalScript', Luz)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BackgroundTransparency = 0.8
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.BackgroundTransparency = 1
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.menu.preto.Enabled = false
+		script.Parent.Parent.Parent.Parent.Parent.menu.azul.Enabled = true
+		script.Parent.Parent.Parent.Parent.Parent.preto.Enabled = false
+		script.Parent.Parent.Parent.Parent.Parent.azul.Enabled = true
+		script.Parent.Parent.Parent.Frame:TweenSize(UDim2.new(1, 0,0.008, 0),"Out","Quad",0.7,true,nil)
+		script.Parent.Visible = false
+		script.Parent.Parent.Noite.Visible = false
+		wait(0.7)
+		script.Parent.Parent.Parent.Frame.Visible = false
+	end)
+end
+coroutine.wrap(OAQFHM_fake_script)()
+local function YKKQB_fake_script() -- Noite.LocalScript 
+	local script = Instance.new('LocalScript', Noite)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BackgroundTransparency = 0.8
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.BackgroundTransparency = 1
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.menu.azul.Enabled = false
+		script.Parent.Parent.Parent.Parent.Parent.menu.preto.Enabled = true
+		script.Parent.Parent.Parent.Parent.Parent.azul.Enabled = false
+		script.Parent.Parent.Parent.Parent.Parent.preto.Enabled = true
+		script.Parent.Parent.Parent.Parent.Parent.azul.Enabled = false
+		script.Parent.Parent.Parent.Frame:TweenSize(UDim2.new(1, 0,0.008, 0),"Out","Quad",0.7,true,nil)
+		script.Parent.Visible = false
+		script.Parent.Parent.Luz.Visible = false
+		wait(0.7)
+		script.Parent.Parent.Parent.Frame.Visible = false
+	end)
+end
+coroutine.wrap(YKKQB_fake_script)()
+local function OQVSAB_fake_script() -- close.LocalScript 
+	local script = Instance.new('LocalScript', close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local registar = script.Parent.Parent.Parent.Parent.registar
+		local frame = script.Parent.Parent.Parent.Load
+		print("Hub was been destroyed!, Cya")
+		frame:TweenSize(UDim2.new(0.18, 0,0, 0),"Out","Quad",0.7,true,nil)
+		wait(0.6)
+		frame.Parent.Parent.BuildBoat:Destroy()
+	end)
+	
+end
+coroutine.wrap(OQVSAB_fake_script)()
+local function QJQFOS_fake_script() -- Auto.LocalScript 
+	local script = Instance.new('LocalScript', Auto)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BackgroundTransparency = 0.8
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.BackgroundTransparency = 1
+	end)
+	
+	local function tp(cframe, speed)
+		local plr = game:GetService("Players").LocalPlayer.Character
+		local tween = game:GetService("TweenService")
+		tween:Create(plr.HumanoidRootPart,TweenInfo.new(speed,Enum.EasingStyle.Linear),{CFrame = cframe}):Play()
+	end
+	
+	local debounce = true
+	script.Parent.MouseButton1Click:Connect(function()
+		if debounce == true then
+			local args = {
+				[1] = "",
+				[2] = 0
+			}
+			workspace.LoadBoatData:FireServer(unpack(args))
+			workspace.BlackZone.VoteLaunchRE:FireServer() -- equipa Preta.
+			workspace.WhiteZone.VoteLaunchRE:FireServer() -- Branco.
+			workspace:FindFirstChild("Really blueZone").VoteLaunchRE:FireServer() -- azul
+			workspace:FindFirstChild("Really redZone").VoteLaunchRE:FireServer() -- vermelha
+			workspace.MagentaZone.VoteLaunchRE:FireServer() -- rosa
+			workspace:FindFirstChild("New YellerZone").VoteLaunchRE:FireServer() -- amarelo
+			workspace.CamoZone.VoteLaunchRE:FireServer() -- verde
+			tp(CFrame.new(Vector3.new(-57.251, 23.232, 690.34)),5)
+			wait(5)
+			tp(CFrame.new(Vector3.new(-56.573, 64.679, 1309.234)),1)
+			--outra
+			tp(CFrame.new(Vector3.new(-56.573, 64.679, 1608.095)),1)
+			wait(0.6)
+			-- outra
+			tp(CFrame.new(Vector3.new(-56.573, 64.679, 1853.205)),1)
+			wait(0.6)
+			--outra
+			tp(CFrame.new(Vector3.new(-56.573, 64.679, 2268.891)),1)
+			wait(0.6)
+			--outra
+			tp(CFrame.new(Vector3.new(-56.573, 64.679, 2834.985)),1)
+			wait(0.6)
+			--outra
+			tp(CFrame.new(Vector3.new(-56.573, 64.679, 3455.013)),1)
+			wait(0.6)
+			--outra 
+			tp(CFrame.new(Vector3.new(-56.573, 62.163, 3732.33)),1)
+			wait(0.6)
+			--outra
+			tp(CFrame.new(Vector3.new(-56.573, 62.163, 3857.052)),1)
+			wait(0.6)
+			--outra
+			tp(CFrame.new(Vector3.new(-56.573, 62.163, 4031.989)),1)
+			wait(0.6)
+			--outra
+			tp(CFrame.new(Vector3.new(-56.573, 62.163, 4263.309)),1)
+			wait(0.6)
+			--outa
+			tp(CFrame.new(Vector3.new(-56.573, 57.939, 4548.252)),1)
+			wait(0.6)
+			--outra
+			tp(CFrame.new(Vector3.new(-56.573, 57.939, 4802.417)),1)
+			wait(0.6)
+			--outra
+			tp(CFrame.new(Vector3.new(-56.573, 57.939, 5189.014)),1)
+			wait(0.6)
+			--outra
+			tp(CFrame.new(Vector3.new(-56.573, 57.939, 5318.768)),1)
+			wait(0.6)
+			tp(CFrame.new(Vector3.new(-56.573, 57.939, 5715.685)),1)
+			wait(0.6)
+			tp(CFrame.new(Vector3.new(-56.573, 57.939, 6028.919)),1)
+			wait(0.6)
+			tp(CFrame.new(Vector3.new(-56.573, 57.939, 6247.259)),1)
+			wait(0.6)
+			tp(CFrame.new(Vector3.new(-56.573, 57.939, 6474.085)),1)
+			wait(0.6)
+			tp(CFrame.new(Vector3.new(-56.573, 57.939, 6724.22)),1)
+			wait(0.6)
+			tp(CFrame.new(Vector3.new(0, 57.939, 6888.159)),1)
+			wait(0.6)
+			tp(CFrame.new(Vector3.new(0, 57.939, 7212.965)),1)
+			wait(0.6)
+			tp(CFrame.new(Vector3.new(0, 57.939, 7600.19)),1)
+			wait(0.6)
+			tp(CFrame.new(Vector3.new(0, 57.939, 7976.244)),1)
+			wait(0.6)
+			tp(CFrame.new(Vector3.new(0, 57.939, 8365.752)),1)
+			wait(0.6)
+			tp(CFrame.new(Vector3.new(0, 57.939, 8555.254)),1)
+			wait(0.6)
+			tp(CFrame.new(Vector3.new(-58.181, 57.939, 9024.318)),1)
+			wait(0.6)
+			tp(CFrame.new(Vector3.new(-58.181, 57.939, 9024.318)),1)
+			wait(0.6)
+			tp(CFrame.new(Vector3.new(-58.385, -92.314, 9481.469)),1)
+			wait(0.6)
+			tp(CFrame.new(Vector3.new(-58.385, -92.314, 9481.469)),1)
+			wait(0.6)
+			tp(CFrame.new(Vector3.new(-58.385, -92.314, 9481.469)),1)
+			wait(0.6)
+			tp(CFrame.new(Vector3.new(game.Workspace.BoatStages.NormalStages.TheEnd.GoldenChest.Trigger.Position)),1)
+			script.Parent.Text = "Disable"
+			local tween = game:GetService("TweenService")
+			debounce = false
+		elseif debounce == false then
+			script.Parent.Text = "Enable"
+			debounce = true
+		end
+	end)
+end
+coroutine.wrap(QJQFOS_fake_script)()
+local function SKFNIKP_fake_script() -- Fun_2.LocalScript 
+	local script = Instance.new('LocalScript', Fun_2)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BackgroundTransparency = 0.8
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.BackgroundTransparency = 1
+	end)
+	
+	local function tp(cframe, speed)
+		local plr = game:GetService("Players").LocalPlayer.Character
+		local tween = game:GetService("TweenService")
+		tween:Create(plr.HumanoidRootPart,TweenInfo.new(speed,Enum.EasingStyle.Linear),{CFrame = cframe}):Play()
+	end
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+			
+			game.Players.LocalPlayer.OtherData.Stage0.Value = "true"
+			game.Players.LocalPlayer.OtherData.Stage1.Value = "true"
+			game.Players.LocalPlayer.OtherData.Stage2.Value = "true"
+			game.Players.LocalPlayer.OtherData.Stage3.Value = "true"
+			game.Players.LocalPlayer.OtherData.Stage4.Value = "true"
+			game.Players.LocalPlayer.OtherData.Stage5.Value = "true"
+			game.Players.LocalPlayer.OtherData.Stage6.Value = "true"
+			game.Players.LocalPlayer.OtherData.Stage7.Value = "true"
+			game.Players.LocalPlayer.OtherData.Stage8.Value = "true"
+			game.Players.LocalPlayer.OtherData.Stage9.Value = "true"
+		game.Players.LocalPlayer.OtherData.End.Value = "true"
+		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+		wait(10)
+		game.Players.LocalPlayer.OtherData.Stage0.Value = ""
+		game.Players.LocalPlayer.OtherData.Stage1.Value = ""
+		game.Players.LocalPlayer.OtherData.Stage2.Value = ""
+		game.Players.LocalPlayer.OtherData.Stage3.Value = ""
+		game.Players.LocalPlayer.OtherData.Stage4.Value = ""
+		game.Players.LocalPlayer.OtherData.Stage5.Value = ""
+		game.Players.LocalPlayer.OtherData.Stage6.Value = ""
+		game.Players.LocalPlayer.OtherData.Stage7.Value = ""
+		game.Players.LocalPlayer.OtherData.Stage8.Value = ""
+		game.Players.LocalPlayer.OtherData.Stage9.Value = ""
+		game.Players.LocalPlayer.OtherData.End.Value = ""
+	
+	end)
+end
+coroutine.wrap(SKFNIKP_fake_script)()
+local function QWOJPDF_fake_script() -- BuildBoat.aviso 
+	local script = Instance.new('LocalScript', BuildBoat)
+
+	
+		game.StarterGui:SetCore("SendNotification", {
+			Title    = "Loaded"; 
+			Text     = "BuildBoat script was been loaded!"; 
+			Icon     = "rbxassetid://2579529276"; 
+			Duration = 5; 
+		})
+	
+	
+end
+coroutine.wrap(QWOJPDF_fake_script)()
+local function PLISYE_fake_script() -- BuildBoat.Instances 
+	local script = Instance.new('LocalScript', BuildBoat)
+
+	script.Parent.Load.Visible = false
+	local blur = Instance.new("BlurEffect", game.Lighting)
+	local musica = Instance.new("Sound", script.Parent)
+	musica.Name = "iniciado"
+	musica.SoundId = 'rbxassetid://8503531171'
+	
+	blur.Name = "EP"
+	blur.Size = 1
+	wait(0.2)
+	blur.Size = 2
+	wait(0.2)
+	blur.Size = 3
+	wait(0.2)
+	blur.Size = 4
+	wait(0.2)
+	blur.Size = 5
+	wait(0.2)
+	blur.Size = 6
+	wait(0.2)
+	blur.Size = 7
+	wait(0.2)
+	blur.Size = 8
+	wait(0.2)
+	blur.Size = 9
+	wait(0.2)
+	blur.Size = 10
+	wait(0.2)
+	blur.Size = 11
+	wait(0.2)
+	blur.Size = 12
+	wait(0.2)
+	blur.Size = 13
+	script.Parent.TextLabel.Visible = true
+	script.Parent.iniciado:Play()
+	wait(1)
+	script.Parent.TextLabel.TextTransparency = 0.2
+	blur.Size = 12
+	wait(0.1)
+	script.Parent.TextLabel.TextTransparency = 0.3
+	blur.Size = 11
+	script.Parent.TextLabel.TextTransparency = 0.4
+	wait(0.1)
+	script.Parent.TextLabel.TextTransparency = 0.5
+	blur.Size = 10
+	wait(0.1)
+	script.Parent.TextLabel.TextTransparency = 0.6
+	blur.Size = 9
+	wait(0.1)
+	script.Parent.TextLabel.TextTransparency = 0.7
+	blur.Size = 8
+	wait(0.1)
+	script.Parent.TextLabel.TextTransparency = 0.8
+	blur.Size = 7
+	wait(0.1)
+	script.Parent.TextLabel.TextTransparency = 0.9
+	blur.Size = 6
+	wait(0.1)
+	script.Parent.TextLabel.TextTransparency = 1
+	blur.Size = 5
+	wait(0.1)
+	blur.Size = 4
+	wait(0.1)
+	blur.Size = 3
+	script.Parent.TextLabel.Visible = false
+	wait(0.1)
+	blur.Size = 2
+	wait(0.1)
+	blur.Size = 1
+	wait(0.1)
+	script.Parent.Load.Visible = true
+	game.Lighting.EP:Destroy()
+end
+coroutine.wrap(PLISYE_fake_script)()
